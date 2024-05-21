@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="justify-content-center jimu-primary-loading"></div>
+    </div>
+
+    <div class="table">
+      <h1 class="table__update-time" id="updateTimeText"></h1>
+
+      <section class="table__error" id="errortext">
+        <p class="table__error-message">У вас возникла ошибка:</p>
+        <ol class="table__error-list">
+          <li class="table__error-item">
+            Проверьте наличие WB Token в
+            <a href="/profile" class="table__error-link">профиле</a>
+          </li>
+          <li class="table__error-item">
+            Если WB Token имеется, но Вы всё равно видите данное сообщение,
+            обратитесь в
+            <a href="https://t.me/profitomer_support" class="table__error-link"
+              >поддержку</a
+            >
+          </li>
+        </ol>
+      </section>
+      <button class="profile__status-link" id="fetchButton">
+        Загрузить данные
+      </button>
+      <script type="module" src="stocks.js"></script>
+    </div>
+    <!-- <script src="/stocks.js"></script> -->
+  </body>
+</html>
